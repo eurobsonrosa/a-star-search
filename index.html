@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-Br">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <link href='https://fonts.googleapis.com/css?family=Abril+Fatface|Roboto' rel='stylesheet'>
+
+  <title>Buscas</title>
+
+
+  <link rel="stylesheet" type="text/css" href="index.css">
+
+  <script src="https://d3js.org/d3.v4.min.js"></script>
+
+</head>
+
+<body>
+  <div id='controles'>
+    <h1>A* Search</h1>
+
+    <h3 id='info'></h3>
+    <div>
+      <h4>Velocidade de busca(max-min):</h4>
+      <input id='tempo' type="range" min="1" max="1000" value="500">
+    </div>
+
+     <div>
+      <button id='startBtn' onclick="run()">START</button>
+      <button id='resetBtn' onclick="reset()">RESET</button>
+    </div>
+    
+    <div>
+      <h3 class="custo">Custo: </h3>
+      <h3 class="custo" id='custo'></h3>
+    </div>
+
+  </div>
+  <div id='mapa'>
+    <script type="text/javascript" src="./index.js"></script>
+  </div>
+
+
+</body>
+
+</html>
